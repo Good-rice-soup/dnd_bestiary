@@ -13,10 +13,11 @@ enum AppScreenLayout {
   desktop;
 
   /// Returns the corresponding [AppScreenLayout] based on the screen width in dp.
-  static AppScreenLayout fromWidth(double screenWidth) => switch (screenWidth) {
-    < 600 => mobile,
-    < 840 => smallTablet,
-    < 1200 => tablet,
-    _ => desktop,
-  };
+  static AppScreenLayout from({required double screenWidth}) =>
+      switch (screenWidth) {
+        < 600 => mobile,
+        < 840 => smallTablet,
+        < 1200 => tablet,
+        _ => desktop,
+      };
 }
