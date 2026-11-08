@@ -73,3 +73,7 @@ linux/flutter/generated*
 # FVM
 .fvm/
 .fvmrc
+
+# Local Notes (not tracked)
+notes/
+
